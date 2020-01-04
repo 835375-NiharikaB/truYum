@@ -44,7 +44,7 @@ public class MenuItemDaoCollectionImplTest {
     public static void testModifyMenuItem() {
         System.out.println("Modify Menu Item");
         MenuItem menuitem=new MenuItem
-                (1,"Eat and Enjoy",12345.0f,true,DateUtil.convertToDate("03/01/2019"),"Main Diah",false);
+                (1,"Eat and Enjoy",12345.0f,true,DateUtil.convertToDate("03/01/2019"),"Main Dish",false);
                 menudao.modifyMenuItem(menuitem);
     }
 
