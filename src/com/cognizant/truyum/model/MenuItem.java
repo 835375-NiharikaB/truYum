@@ -10,7 +10,7 @@ public class MenuItem {
     private boolean active;
     private Date dateOfLaunch;
     private String category;
-    private boolean freedelivery;
+    private boolean freeDelivery;
 
     public MenuItem() {
 
@@ -25,7 +25,7 @@ public class MenuItem {
         this.active = active;
         this.dateOfLaunch = dateOfLaunch;
         this.category = category;
-        this.freedelivery = freedelivery;
+        this.freeDelivery = freedelivery;
     }
 
     public long getId() {
@@ -77,11 +77,11 @@ public class MenuItem {
     }
 
     public boolean isFreedelivery() {
-        return freedelivery;
+        return freeDelivery;
     }
 
     public void setFreedelivery(boolean freedelivery) {
-        this.freedelivery = freedelivery;
+        this.freeDelivery = freedelivery;
     }
 
     @Override
@@ -91,7 +91,7 @@ public class MenuItem {
         result = prime * result + (active ? 1231 : 1237);
         result = prime * result + ((category == null) ? 0 : category.hashCode());
         result = prime * result + ((dateOfLaunch == null) ? 0 : dateOfLaunch.hashCode());
-        result = prime * result + (freedelivery ? 1231 : 1237);
+        result = prime * result + (freeDelivery ? 1231 : 1237);
         result = prime * result + (int) (id ^ (id >>> 32));
         result = prime * result + ((name == null) ? 0 : name.hashCode());
         result = prime * result + Float.floatToIntBits(price);
@@ -119,7 +119,7 @@ public class MenuItem {
                 return false;
         } else if (!dateOfLaunch.equals(other.dateOfLaunch))
             return false;
-        if (freedelivery != other.freedelivery)
+        if (freeDelivery != other.freeDelivery)
             return false;
         if (id != other.id)
             return false;
@@ -139,8 +139,7 @@ public class MenuItem {
 
         return String.format("%-10s%-18s%-15s%-10s%-18s%-15s%-15s\n", id, name, price,
                 active == true ? "Yes" : "No", sdf.format(dateOfLaunch), category,
-                freedelivery == true ? "Yes" : "No");
+                freeDelivery == true ? "Yes" : "No");
 
     }
 }
-

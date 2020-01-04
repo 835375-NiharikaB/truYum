@@ -10,5 +10,5 @@ public interface MenuItemDao {
 
     public void modifyMenuItem(MenuItem menuitem);// update the menu items
 
-    public MenuItem getMenuItem(long menuItemId);// retrive the particular menu item
+    public MenuItem getMenuItem(long menuItemId);// retrieve the particular menu item
 }

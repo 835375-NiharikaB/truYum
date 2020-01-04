@@ -12,10 +12,12 @@ public class MenuItemDaoCollectionImplTest {
         testGetMenuItemListAdmin();
         testGetMenuItemListCustomer();
         testModifyMenuItem();
+        testGetMenuItemListAdmin();
         testGetMenuItem();
     }
 
     public static void testGetMenuItemListAdmin() {
+        System.out.println("Admin View");
         MenuItemDao menudao = new MenuItemDaoCollectionImpl();
         List<MenuItem> menu = menudao.getMenuItemListAdmin();
         System.out.printf("%-10s%-18s%-15s%-10s%-18s%-15s%-15s\n", "Id", "Name", "Price", "Active",
@@ -28,6 +30,7 @@ public class MenuItemDaoCollectionImplTest {
     }
 
     public static void testGetMenuItemListCustomer() {
+        System.out.println("Customer View");
         List<MenuItem> menuitem=menudao.getMenuItemListCustomer();
         System.out.printf("%-10s%-18s%-15s%-10s%-18s%-15s%-15s\n", "Id", "Name", "Price", "Active",
                 "Date Of Lunch", "Category", "Free Delivery");

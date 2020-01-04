@@ -1,0 +1,182 @@
+/*all pages*/
+header {
+    top: 0%;
+    background-color: #122880;
+    min-width: 100%;
+    position: fixed;
+    left: 0%;
+    height: 6%;
+}
+/*all pages*/
+.heading {
+    top: 0%;
+    left: 2%;
+    position: fixed;
+    font-size: 23px;
+    font-family: Arial;
+    color: #f7f6f2;
+}
+/*admin page*/
+.menu {
+    top: 2%;
+    font-size: 22px;
+    left: 85%;
+    position: fixed;
+    height: 4%;
+    color: #f7f9fc;
+}
+/*cart in header*/
+.cart {
+    top: 2%;
+    font-size: 22px;
+    left: 90%;
+    position: fixed;
+    height: 4%;
+    color: #f7f9fc;
+}
+/*for header*/
+img {
+    top: 1%;
+    height: 5%;
+    position: fixed;
+    left: 7%;
+}
+/*admin page*/
+.menu-text {
+    height: 5%;
+    position: fixed;
+    left: 5.5%;
+    top: 13%;
+    color: #111211;
+}
+/*font color of table*/
+.table-value {
+    color: #111211;
+	top:30%;
+	left:5%;
+	
+}
+
+/*admin,customer,cart,cart-notification*/
+table {
+    height: 5%;
+    position: fixed;
+    left: 7%;
+    top: 24%;
+    font-size: 20px;
+    min-width:60%;
+}
+
+
+/*all pages*/
+footer {
+    bottom: 0%;
+    background-color: #999a9e;
+    min-width: 100%;
+    position: fixed;
+    left: 0%;
+    height: 6%;
+    font-family: Arial;
+    font-size: 25px;
+}
+/*all pages*/
+.footer-text {
+    bottom: 0.5%;
+    left: 2%;
+    position: fixed;
+    font-size: 16px;
+    font-family: Arial;
+    color: #0a0a0a;
+}
+/*edit-menu-item-status*/
+.status {
+    color: #0fbf59;
+    font-size: 19px;
+    height: 5%;
+    position: fixed;
+    left: 5.5%;
+    top: 24%;
+}
+/*customer notification*/
+.status1 {
+    color: #0fbf59;
+    font-size: 25px;
+    height: 5%;
+    position: fixed;
+    left: 22%;
+    top: 21%;
+}
+/*cart notification*/
+.status2 {
+    color: #0fbf59;
+    font-size: 22px;
+    height: 5%;
+    position: fixed;
+    left: 18.5%;
+    top: 18%;
+}
+/*cart empty*/
+.status3 {
+    color: #686e6a;
+    font-size: 22px;
+    height: 5%;
+    position: fixed;
+    left: 5%;
+    top: 24%;
+}
+/*cart page*/
+.delete {
+    position: fixed;
+    left: 37.5%;
+}
+/*cart page*/
+.delete-1 {
+    position: fixed;
+    left: 37.5%;
+}
+/*cart page*/
+.delete-2 {
+    position: fixed;
+    left: 37.5%;
+}
+/* edit-menu-item.html*/
+.button {
+    background-color: #141085;
+    position: fixed;
+    font-size: 32px;
+    color: #f5f5f5;
+	border:none;
+	
+}
+/* cart.html */
+.cart-table-value{
+	min-width:38%;
+	left:5%;
+}
+
+/* cart-notification.html */
+.cart-table-value1{
+	min-width:38%;
+	left:5%;
+}
+
+/*menu-item-list-admin.html */
+.table-space{
+	top:26%;
+	min-width:65%;
+	left:5%;
+}
+/*menu-item-list-customer.html */
+.customer-table{
+	min-width:45%;
+	left:5%;
+}
+/*form page*/
+.form{
+	left:5%;
+}
+
+	
+
+
+	
