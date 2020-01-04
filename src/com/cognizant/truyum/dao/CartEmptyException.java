@@ -1,7 +1,5 @@
 package com.cognizant.truyum.dao;
 
-
-
 public class CartEmptyException extends Exception {
     /**
      * 
@@ -12,10 +10,5 @@ public class CartEmptyException extends Exception {
     public String toString() {
         return "Cart is Empty";
     }
-    
-    
 
-    
-    }
-
-
+}

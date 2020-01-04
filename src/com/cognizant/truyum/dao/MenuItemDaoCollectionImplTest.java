@@ -7,7 +7,8 @@ import com.cognizant.truyum.util.DateUtil;
 
 // MenuItem (Admin) Main class 
 public class MenuItemDaoCollectionImplTest {
-    static MenuItemDao menudao=new MenuItemDaoCollectionImpl();
+    static MenuItemDao menudao = new MenuItemDaoCollectionImpl();
+
     public static void main(String[] args) {
         testGetMenuItemListAdmin();
         testGetMenuItemListCustomer();
@@ -23,7 +24,7 @@ public class MenuItemDaoCollectionImplTest {
         System.out.printf("%-10s%-18s%-15s%-10s%-18s%-15s%-15s\n", "Id", "Name", "Price", "Active",
                 "Date Of Launch", "Category", "Free Delivery");
         for (MenuItem menuItem : menu) {
-            System.out.println(menuItem);//invokes toString();
+            System.out.println(menuItem);// invokes toString();
 
         }
 
@@ -31,31 +32,29 @@ public class MenuItemDaoCollectionImplTest {
 
     public static void testGetMenuItemListCustomer() {
         System.out.println("Customer View");
-        List<MenuItem> menuitem=menudao.getMenuItemListCustomer();
+        List<MenuItem> menuitem = menudao.getMenuItemListCustomer();
         System.out.printf("%-10s%-18s%-15s%-10s%-18s%-15s%-15s\n", "Id", "Name", "Price", "Active",
                 "Date Of Launch", "Category", "Free Delivery");
         for (MenuItem menuItem2 : menuitem) {
             System.out.println(menuItem2);
-            
+
         }
 
     }
 
     public static void testModifyMenuItem() {
         System.out.println("Modify Menu Item");
-        MenuItem menuitem=new MenuItem
-                (1,"Eat and Enjoy",12345.0f,true,DateUtil.convertToDate("03/01/2019"),"Main Dish",false);
-                menudao.modifyMenuItem(menuitem);
+        MenuItem menuitem = new MenuItem(1, "Eat and Enjoy", 12345.0f, true,
+                DateUtil.convertToDate("03/01/2019"), "Main Dish", false);
+        menudao.modifyMenuItem(menuitem);
     }
-
-    
 
     public static void testGetMenuItem() {
         System.out.println("Get Menu Item");
         System.out.printf("%-10s%-18s%-15s%-10s%-18s%-15s%-15s\n", "Id", "Name", "Price", "Active",
                 "Date Of Launch", "Category", "Free Delivery");
-        MenuItem menuitem=menudao.getMenuItem(3);
-        System.out.println(menuitem);//invokes toString()
+        MenuItem menuitem = menudao.getMenuItem(3);
+        System.out.println(menuitem);// invokes toString()
 
     }
 }
