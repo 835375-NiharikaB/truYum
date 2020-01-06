@@ -9,9 +9,9 @@ public class CartDaoCollectionImplTest {
 
     public static void main(String[] args) {
         testAddCartItem();
-        testgetAllCartItems();
+        testGetAllCartItems();
         testRemoveCartItem();
-        testgetAllCartItems();
+        testGetAllCartItems();
 
     }
 
@@ -21,7 +21,7 @@ public class CartDaoCollectionImplTest {
         cartDao.addCartItem(1, 3);// 1 is userId,3 is menuItemId
     }
 
-    public static void testgetAllCartItems() {
+    public static void testGetAllCartItems() {
         try {
             System.out.println("Retrieving all the items from cart");
             List<MenuItem> list = cartDao.getAllCartItems(1).getMenuItemList(); // 1 is userId
