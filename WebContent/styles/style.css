@@ -46,7 +46,7 @@ img {
     height: 5%;
     position: fixed;
     left: 5.5%;
-    top: 13%;
+    top: 10%;
     color: #111211;
 }
 /*font color of table*/
@@ -104,7 +104,7 @@ footer {
     height: 5%;
     position: fixed;
     left: 22%;
-    top: 21%;
+    top: 18%;
 }
 /*cart notification*/
 .status2 {
@@ -113,7 +113,7 @@ footer {
     height: 5%;
     position: fixed;
     left: 18.5%;
-    top: 18%;
+    top: 13%;
 }
 /*cart empty*/
 .status3 {
@@ -176,7 +176,7 @@ footer {
 	left:5%;
 }
 
-	
+
 
 
 	

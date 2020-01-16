@@ -1,8 +1,9 @@
-function validate() {
-    var itemName = document.forms["menu"]["title"].value;
-    var price = document.forms["menu"]["price"].value;
-    var dateOfLaunch = document.forms["menu"]["dateOfLaunch"].value;
-    var category = document.forms["menu"]["category"].value;
+function validateMenuItemForm() {
+    var itemName = document.forms["menuItemForm"]["name"].value;
+    var price = document.forms["menuItemForm"]["price"].value;
+    var dateOfLaunch = document.forms["menuItemForm"]["dateOfLaunch"].value;
+    var category = document.forms["menuItemForm"]["category"].value;
+    
     var regex = (/^.*[0-9].*$/);
 
     if (itemName == "") {
