@@ -18,8 +18,8 @@
 
 
     <h1 class="menu-text">Cart</h1>
-    <c:if test="${addCartStatus==true }">
-        <h4>Item Added To Cart Successfully</h4>
+    <c:if test="${ removeCartItemStatus==true }">
+        <h4 class="status2">Item Removed From Cart Successfully</h4>
     </c:if>
     <c:set var="cart" value="${cart }"></c:set>
     <table width="50" cellspacing="9" cellpadding="10" class="cart-table-value">
