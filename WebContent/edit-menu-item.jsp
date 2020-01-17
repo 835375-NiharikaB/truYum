@@ -62,7 +62,7 @@
                     autofocus size=20 autocomplete="off" placeholder="27/04/2022" spellcheck="false"></td>
 
                 <td><select name="category">
-                        <option></option>
+
                         <option value="${menuItem.getCategory()}">${menuItem.getCategory()}
                         </option>
 

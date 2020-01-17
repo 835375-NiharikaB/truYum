@@ -3,7 +3,7 @@ function validateMenuItemForm() {
     var price = document.forms["menuItemForm"]["price"].value;
     var dateOfLaunch = document.forms["menuItemForm"]["dateOfLaunch"].value;
     var category = document.forms["menuItemForm"]["category"].value;
-    
+
     var regex = (/^.*[0-9].*$/);
 
     if (itemName == "") {
@@ -26,7 +26,7 @@ function validateMenuItemForm() {
         return false;
     }
 
-    if ( dateOfLaunch== "") {
+    if (dateOfLaunch == "") {
         alert("Date of Launch is required");
         return false;
     }
