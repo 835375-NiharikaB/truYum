@@ -39,7 +39,7 @@
                     </c:choose></td>
 
 
-                <td>${ menuItem.getPrice()}</td>
+                <td>Rs. ${ menuItem.getPrice()}</td>
 
                 <td align="center">${ menuItem.getCategory()}</td>
 
