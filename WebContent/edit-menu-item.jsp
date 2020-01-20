@@ -22,7 +22,7 @@
         onsubmit="return validateMenuItemForm()">
         <table cellspacing=8 class="form">
             <tr>
-                <input type="hidden" name="id" value="${menuItem.getId()}">
+               <td> <input type="hidden" name="id" value="${menuItem.getId()}"></td>
             </tr>
             <tr>
                 <td><label for="name"><b>Name<b></label></td>
