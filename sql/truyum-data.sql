@@ -8,18 +8,41 @@ insert into truyum.menu_item(me_name,me_price,me_active,me_date_of_launch,me_cat
 insert into truyum.menu_item(me_name,me_price,me_active,me_date_of_launch,me_category,me_free_delivery) values('Chocolate',32.00,'Yes','2022-11-02','Dessert','Yes');
 
 -- b.Retrieving menu items(admin view)
-select*from truyum.menu_item;
+SELECT 
+    *
+FROM
+    truyum.menu_item;
 
 -- 2.View Menu Item List Customer(TYUCoo2)
 -- a.Retrieving menu items(customer view)
-select* from truyum.menu_item where me_active='Yes' and me_date_of_launch<=(select CurDate());
+SELECT 
+    *
+FROM
+    truyum.menu_item
+WHERE
+    me_active = 'Yes'
+        AND me_date_of_launch <= (SELECT CURDATE());
 
 -- 3.Edit Menu Item(TYUCoo3)
 -- a.Retrieving particular menu item for edit
-select * from truyum.menu_item where me_id=1;
+SELECT 
+    *
+FROM
+    truyum.menu_item
+WHERE
+    me_id = 1;
 
 -- b.Updating menu item id=1
-update truyum.menu_item set me_name='Cheesy Sandwich',me_price=150.00,me_active='No',me_date_of_launch='2018-03-15',me_category='Starters',me_free_delivery='No' where me_id=1;
+UPDATE truyum.menu_item 
+SET 
+    me_name = 'Cheesy Sandwich',
+    me_price = 150.00,
+    me_active = 'No',
+    me_date_of_launch = '2018-03-15',
+    me_category = 'Starters',
+    me_free_delivery = 'No'
+WHERE
+    me_id = 1;
 
 -- 4.Add to Cart(TYUCoo4)
 -- a.Inserting user details and adding cart information in their user id
