@@ -66,10 +66,10 @@
                         <option value="${menuItem.getCategory()}">${menuItem.getCategory()}
                         </option>
 
-                        <option>Starters</option>
-                        <option>Main Course</option>
-                        <option>Desserts</option>
-                        <option>Drinks</option>
+                        <option value="Starters">Starters</option>
+                        <option value="Main Course">Main Course</option>
+                        <option value="Desserts">Desserts</option>
+                        <option value="Drinks">Drinks</option>
                 </select></td>
             </tr>
 
